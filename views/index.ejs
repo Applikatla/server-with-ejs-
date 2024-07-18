@@ -6,6 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <%- include('header.ejs') %>
    <% if (locals.nameLength) { %>
         <h1>The length of the name is <%= nameLength %></h1>
    <% } else { %>
@@ -16,5 +17,6 @@
         <input type="text" id="lname" name="lname" required placeholder="lname">
         <input type="submit" value="ok">
     </form>
+    <%- include('footer.ejs') %>
 </body>
 </html>
